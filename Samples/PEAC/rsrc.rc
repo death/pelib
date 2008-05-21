@@ -1,0 +1,135 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Unknown language: 0xD, 0x1 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HEB)
+#ifdef _WIN32
+LANGUAGE 0xD, 0x1
+#pragma code_page(1255)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOG DISCARDABLE  0, 0, 238, 198
+STYLE DS_3DLOOK | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "PE Address Converter"
+FONT 8, "Tahoma"
+BEGIN
+    PUSHBUTTON      "&Browse...",IDC_BROWSE,176,18,49,14
+    CONTROL         "File Offset",IDC_MODE_FO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,13,56,49,10
+    CONTROL         "Relative Virtual Address",IDC_MODE_RVA,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,13,71,92,10
+    CONTROL         "Virtual Address",IDC_MODE_VA,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,13,86,64,10
+    EDITTEXT        IDT_FO,138,54,65,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDT_RVA,138,69,65,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDT_VA,138,84,65,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    DEFPUSHBUTTON   "&Convert",IDC_CONVERT,22,176,49,14
+    PUSHBUTTON      "&About",IDC_ABOUT,94,176,49,14
+    PUSHBUTTON      "E&xit",IDC_EXIT,166,176,49,14
+    GROUPBOX        "Input File",IDC_STATIC,7,7,224,32
+    GROUPBOX        "Converter",IDC_STATIC,7,45,224,59
+    EDITTEXT        IDT_FILENAME,15,19,154,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    GROUPBOX        "Information",IDC_STATIC,7,112,224,59
+    LTEXT           "Section name",IDC_STATIC,13,125,44,8
+    LTEXT           "Bytes in this address",IDC_STATIC,13,138,67,8
+    EDITTEXT        IDT_SECTION,125,122,91,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDT_BYTES,125,138,91,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Image base",IDC_STATIC,13,153,38,8
+    EDITTEXT        IDT_IMAGEBASE,125,153,91,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 231
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 190
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAIN                ICON    DISCARDABLE     "exec.ico"
+#endif    // Unknown language: 0xD, 0x1 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

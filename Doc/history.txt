@@ -1,0 +1,74 @@
+Version 1.? -
+    *   Now precompiled headers are used in a correct way.
+
+    *   Made some functions constant/static.
+
+    *   Added the resource directory entry information to the
+        CResourceDirectory class.
+
+    *   Renamed samples.doc to samples.txt for consistency.
+
+    *   Made PortableExecutable.h a bit more readable.
+
+Version 1.2 -
+    *   Added a new data directory class, CDD_Resource.
+
+    *   Changed CUtil's interface, now we use it in a better way.
+
+    *   Fixed a bug in the CSection class.
+
+    *   Added a check for non-standard MZ headers.
+
+    *   Fixed SetStub sample when using a stub from a PE file.
+
+    *   Removed tabs from sources, I hate tabs!
+
+    *   Changed lists so they contain pointers, now CDD_Debug::SetTable
+        works fine.
+
+    *   Now the CPortableExecutable::Load method will also fix PE
+        section offsets, section sizes, image size, header size.
+
+    *   Added a new data directory class, CDD_Copyright.
+
+    *   Alot of code adjustments.
+
+    *   CSectionImport/Export needn't be inherited from CSection.
+
+Version 1.1 -
+    *   Moved section list definitions to section header file.
+
+    *   Removed NUM_DEB_TYPES from CDD_Debug header and placed a
+        constant value in CUtil class that says how many debug types.
+        Also added GetNumDebugTypes() method to CUtil.
+
+    *   Moved class-used definitions into the classes they belong
+        to.
+
+    *   PEAC sample fixed (build settings were on PE lib, so it wasn't
+        fixed in previous release).
+
+    *   Major CSectionImport bug fixed, interface has also changed.
+
+    *   Fixed AddSection() to work on (non-standard) PEs that have
+        VirtualSize = 0 (or lower than SizeOfRawData), this affects
+        CSectionImport and CSectionExport, also resulted in adding
+        a method to CPortableExecutable: FixSectionSizes().
+
+    *   Minor code adjustments
+
+    *   Added new method to CPortableExecutable: SetNewStub(), can
+        set new DOS stub for the PE. A sample for it can be found
+        (SetStub).
+
+    *   Fixed FixSectionOffsets().
+
+    *   Added GetNumSections() method.
+
+    *   Removed semi-support for (very) old compilers. This library
+        is designed to work on MSVC6/7.
+
+Version 1.0 fixed
+    *   Fixed samples.
+
+Version 1.0 - Initial release.

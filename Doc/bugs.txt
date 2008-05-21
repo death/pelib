@@ -1,0 +1,5 @@
+Always check that you have the latest version of the PE library (http://execution.cjb.net/).
+If you happen to find bugs in this release, please contact me:
+
+IRC:    _death@EFnet (#execution)
+E-Mail: death@minorthreat.com

@@ -1,0 +1,8 @@
+Making a project with the PE library:
+
+    Add the PE library project to yours, add include directory where PE
+    library resides, set your project to be the active one if it's not
+    already, make your project dependant on the PE library.
+
+    Use namespace PE.
+

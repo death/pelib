@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PEAC", "PEAC.vcproj", "{C3EA028A-861D-46BA-9DA5-0890994123D5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pe", "..\..\pe.vcproj", "{9C606EB2-11CB-4AB0-B338-465C44548B36}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+		{C3EA028A-861D-46BA-9DA5-0890994123D5}.0 = {9C606EB2-11CB-4AB0-B338-465C44548B36}
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{C3EA028A-861D-46BA-9DA5-0890994123D5}.Debug.ActiveCfg = Debug|Win32
+		{C3EA028A-861D-46BA-9DA5-0890994123D5}.Debug.Build.0 = Debug|Win32
+		{C3EA028A-861D-46BA-9DA5-0890994123D5}.Release.ActiveCfg = Release|Win32
+		{C3EA028A-861D-46BA-9DA5-0890994123D5}.Release.Build.0 = Release|Win32
+		{9C606EB2-11CB-4AB0-B338-465C44548B36}.Debug.ActiveCfg = Debug|Win32
+		{9C606EB2-11CB-4AB0-B338-465C44548B36}.Debug.Build.0 = Debug|Win32
+		{9C606EB2-11CB-4AB0-B338-465C44548B36}.Release.ActiveCfg = Release|Win32
+		{9C606EB2-11CB-4AB0-B338-465C44548B36}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

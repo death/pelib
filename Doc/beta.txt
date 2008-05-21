@@ -1,0 +1,3 @@
+People that have helped to find bugs:
+    -   ParaBytes
+    -   Dr_Logan

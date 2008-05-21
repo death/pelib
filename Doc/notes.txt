@@ -1,0 +1,3 @@
+At the moment, the CSectionExport/CSectionImport can only add/edit a new
+section, they cannot append to already existing sections (except if they
+were created by them).

@@ -1,0 +1,106 @@
+---------------------------------------------------------------------
+PE Library Samples
+---------------------------------------------------------------------
+In this directory you will find several samples for using the PE
+library.
+
+---------------------------------------------------------------------
+Sample 1 - Align PE                                        [AlignPE]
+---------------------------------------------------------------------
+This is a simple PE realigner. Choose a PE and it will display its
+file alignment value. It allows you to change that value, choose
+Align it! and it will realign the PE to that value.
+
+This sample shows usage of:
+    The CPortableExecutable::Realign() method.
+
+---------------------------------------------------------------------
+Sample 2 - PE Address Converter                               [PEAC]
+---------------------------------------------------------------------
+A simple utility to convert between File Offset, Relative Virtual
+Address and Virtual Address in a PE file. Choose a PE file and it
+will allow you to convert the addresses for it. It will also show
+some valuable information such as section name (in which the address
+is), the bytes in the address and the Image base of the PE.
+
+This sample shows usage of:
+    The various address conversion methods in CPortableExecutable.
+
+---------------------------------------------------------------------
+Sample 3 - Debug Info                                    [DebugInfo]
+---------------------------------------------------------------------
+A console-based debug directory information viewer. Run it on a PE
+that contains a debug directory and it will display the directory's
+information.
+
+This sample shows usage of:
+    CPortableExecutable::m_ddDebug Data directory object (CDD_Debug).
+
+---------------------------------------------------------------------
+Sample 4 - Export Info                                  [ExportInfo]
+---------------------------------------------------------------------
+A console-based export information viewer. Run it on a PE that contains
+an export directory and it will display the exports information.
+
+This sample shows usage of:
+    CPortableExecutable::m_ddExport Data directory object
+    (CDD_Export).
+
+---------------------------------------------------------------------
+Sample 5 - Import Info                                  [ImportInfo]
+---------------------------------------------------------------------
+A console-based import information viewer. Run it on a PE that contains
+an import directory and it will display the imports information.
+
+This sample shows usage of:
+    CPortableExecutable::m_ddImport Data directory object
+    (CDD_Import).
+
+---------------------------------------------------------------------
+Sample 6 - Export Adder                                [ExportAdder]
+---------------------------------------------------------------------
+A demonstration of adding exports to any executable.
+
+This sample shows usage of:
+    CSectionExport class.
+
+---------------------------------------------------------------------
+Sample 7 - Import Adder                                [ImportAdder]
+---------------------------------------------------------------------
+A demonstration of adding imports to any executable.
+
+This sample shows usage of:
+    CSectionImport class.
+
+---------------------------------------------------------------------
+Sample 8 - SetStub                                         [SetStub]
+---------------------------------------------------------------------
+Demonstrates how to set a new DOS stub for the PE.
+Warning: If the file is an MZ executable, its relocation information
+must not override the e_lfanew field, or the windows loader won't be
+able to load the constructed PE.
+
+This sample shows usage of:
+    The CPortableExecutable::SetNewStub() method.
+
+---------------------------------------------------------------------
+Sample 9 - Copyright Info                            [CopyrightInfo]
+---------------------------------------------------------------------
+A console-based copyright information viewer. Run it on a PE that
+contains a copyright directory and it will display the information.
+
+This sample shows usage of:
+    CPortableExecutable::m_ddCopyright Data directory object
+    (CDD_Copyright).
+
+---------------------------------------------------------------------
+Sample 10 - Resource Info                             [ResourceInfo]
+---------------------------------------------------------------------
+A console-based resource information viewer. Run it on a PE that
+contains a resource directory and it will display the information.
+
+This sample shows usage of:
+    CPortableExecutable::m_ddResource Data directory object
+    (CDD_Resource), CResourceDirectory, CResourceEntry.
+
+---------------------------------------------------------------------
