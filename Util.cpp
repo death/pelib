@@ -115,7 +115,8 @@ string CUtil::GetResourceString(LPBYTE pData)
     string str;
 
     if (psz) {
-        for (short i = 0; i < wLength; i++) {
+        short i;
+        for (i = 0; i < wLength; i++) {
             psz[i] = pData[i * 2];
         }
         psz[i] = '\0';

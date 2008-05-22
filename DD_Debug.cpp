@@ -61,7 +61,7 @@ void CDD_Debug::GetTable(DWORD dwIndex, PIMAGE_DEBUG_DIRECTORY pdirDeb) const
     dirDebCIterator i;
 
     i = GetTableCIterator(dwIndex);
-    if ((i != NULL) && (IsBadWritePtr(pdirDeb, sizeof(IMAGE_DEBUG_DIRECTORY)) == FALSE))
+    if ((i != m_lstDeb.end()) && (IsBadWritePtr(pdirDeb, sizeof(IMAGE_DEBUG_DIRECTORY)) == FALSE))
         CopyMemory(pdirDeb, *i, sizeof(IMAGE_DEBUG_DIRECTORY));
 }
 
@@ -71,7 +71,7 @@ void CDD_Debug::SetTable(DWORD dwIndex, PIMAGE_DEBUG_DIRECTORY pdirDeb)
     dirDebIterator i;
 
     i = GetTableIterator(dwIndex);
-    if ((i != NULL) && (IsBadReadPtr(pdirDeb, sizeof(IMAGE_DEBUG_DIRECTORY)) == FALSE))
+    if ((i != m_lstDeb.end()) && (IsBadReadPtr(pdirDeb, sizeof(IMAGE_DEBUG_DIRECTORY)) == FALSE))
         CopyMemory(*i, pdirDeb, sizeof(IMAGE_DEBUG_DIRECTORY));
 }
 
@@ -80,7 +80,7 @@ CDD_Debug::dirDebCIterator CDD_Debug::GetTableCIterator(DWORD dwIndex) const
 {
     dirDebCIterator i;
 
-    i = NULL;
+    i = m_lstDeb.end();
 
     if (m_lstDeb.empty() == FALSE && dwIndex < GetNumTables()) {
         i = m_lstDeb.begin();
@@ -95,7 +95,7 @@ CDD_Debug::dirDebIterator CDD_Debug::GetTableIterator(DWORD dwIndex)
 {
     dirDebIterator i;
 
-    i = NULL;
+    i = m_lstDeb.end();
 
     if (m_lstDeb.empty() == FALSE && dwIndex < GetNumTables()) {
         i = m_lstDeb.begin();
